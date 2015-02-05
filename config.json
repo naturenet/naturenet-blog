@@ -1,9 +1,9 @@
 {
   "locals": {
     "url": "http://localhost:8080",
-    "name": "The Wintersmith's blog",
+    "name": "CU / NatureNet",
     "owner": "Someone",
-    "description": "Ramblings of an immor(t)al demigod"
+    "description": "citizen science, data, visualization"
   },
   "plugins": [
     "./plugins/paginator.coffee"
