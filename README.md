@@ -12,7 +12,9 @@ The default [wintersmith](https://github.com/jnordberg/wintersmith) template
 	$ wintersmith preview
 	
 
-Open browser to `http://localhost:8080`
+Open browser to `http://localhost:8080/naturenet-blog`
+
+`naturenet-blog/` is needed in the address.
 
 If port 8000 doesn't work, try a different port, such as 8089
 
@@ -46,3 +48,6 @@ Now push to github server
 	$ git push origin master
 	
 
+# Deploy
+
+	$ git subtree push --prefix build origin gh-pages

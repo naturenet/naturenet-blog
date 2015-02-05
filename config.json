@@ -5,6 +5,7 @@
     "owner": "Someone",
     "description": "citizen science, data, visualization"
   },
+  "baseUrl": "/naturenet-blog/",  
   "plugins": [
     "./plugins/paginator.coffee"
   ],
