@@ -7,5 +7,5 @@ template: article.jade
 
 Some reflections about pegs fun.
 
-![bird](bird.png)
+![pegs](pegs.png)
 
