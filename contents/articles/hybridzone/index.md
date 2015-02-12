@@ -1,19 +1,18 @@
 ---
-title: Hybrid
+title: Notes on re-creating data visualizations of the hybrid zone of the black-capped chickadee and the carolina chickadee
 author: Sloane O'Neill
 date: 2015-02-05
 template: article.jade
 ---
 
-**Notes on re-creating data visualizations of the hybrid zone of the black-capped chickadee and the carolina chickadee.**
--------------------------------------------------------------------------------------------------------------------------
 
-Looking at the hybrid zone of the chickadees and the individual zones of the chickadees
-Look at the difference of the years of where people have spotted the chickadees, split into pre 1990 to post- 1990
-The only problem with this visualization is I am afraid it doesn’t accurately depict the moving border of the birds’ migration patterns because it is solely dependent on those who observed it -----> problem with citizen science data mining: eBird harnesses the fact that bird watching is a hobby and proceeds to use digitally logged observations to look make some sort of conclusion about a specific bird population at whole, but this can’t be very accurate
-One person who sighted a chickadee in a region more southern than it typically is will cause the data in tableau to appear slightly skewed I think
+ISSUES
+
+The only problem with some of the visualizations is that some of the data doesn’t accurately depict the moving border of the hybrid zone/migration zone/pattern because there are outliers that can skew the image visualized through Tableau. I do not see this as being just a problem with the eBird data but perhaps a problem with citizen science data mining in general: how accurately we can convey information via data visualization depends on how well the data is structured and I think that the way the eBird data (and other data from various citizen science platforms) is structured is not compatible with visualization systems. The goal then when designing citizen science platforms to collect data will be to create a platform which organizes/structures the data in a way such that it is understandable to the average persin and easy to use in conjunction with a specific visualization software (chosen by the website for example). 
 
 -------------------------------------------------------------------------------------------------------------------------
+
+Specific issues with tableau: 
 
 Need to figure out to convey ‘observation clusters’ to depict a more accurate representation of the data 
 Perhaps when we import the data into excel something becomes corrupted and fills certain slots in with an X – because it is ridiculous that they would have data and a location and time/place etc. and not include how many (if any) observed it there – will need to look into this. 
