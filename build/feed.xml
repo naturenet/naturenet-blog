@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CU / NatureNet</title>
+    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://localhost:8080</link>
+    <description>citizen science, data, visualization</description>
+    <pubDate>Wed, 04 Feb 2015 17:00:00 -0700</pubDate>
+    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>Ebird Questions</title>
+      <link>http://localhost:8080/naturenet-blog/articles/ebirdquestions/</link>
+      <pubDate>Wed, 04 Feb 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/ebirdquestions/</guid>
+      <author></author>
+      <description>&lt;p&gt;20 Questions to Challenge Jackie with respect to ebird data:&lt;/p&gt;
+&lt;p&gt;Data: a tiny slice&lt;/p&gt;
+&lt;p&gt;Tool: Excel&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;How many total observations?&lt;/li&gt;
+&lt;li&gt;What are the 3 most common birds?&lt;/li&gt;
+&lt;li&gt;What state has the most observations?&lt;/li&gt;
+&lt;li&gt;What is the most number of count made by a person in a single observation?&lt;/li&gt;
+&lt;li&gt;How many unique taxonomy ids?&lt;/li&gt;
+&lt;li&gt;What is the longest common name?&lt;/li&gt;
+&lt;li&gt;Who observed the most birds?  List their first and last name.  &lt;/li&gt;
+&lt;li&gt;How many kinds of hybrid species are there?  &lt;/li&gt;
+&lt;li&gt;What time of year has the most observations?&lt;/li&gt;
+&lt;li&gt;Which bird was observed in the most number of states/countries?&lt;/li&gt;
+&lt;li&gt;What is the average duration of an observation?&lt;/li&gt;
+&lt;li&gt;How many bird species have American in their common name?&lt;/li&gt;
+&lt;li&gt;What percentage of time do the observers identify a bird’s sex?&lt;/li&gt;
+&lt;li&gt;How many different countries?&lt;/li&gt;
+&lt;li&gt;Which country has the most number of observers?&lt;/li&gt;
+&lt;li&gt;Which column has the most number of missing data?&lt;/li&gt;
+&lt;li&gt;Which locality type is the most frequent?&lt;/li&gt;
+&lt;li&gt;What is the longest trip comment?&lt;/li&gt;
+&lt;li&gt;What is the highest latitude an observation was taken?&lt;/li&gt;
+&lt;li&gt;When was the earliest date and the most recent date?&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    <item>
+      <title>Pegs</title>
+      <link>http://localhost:8080/naturenet-blog/articles/peg/</link>
+      <pubDate>Wed, 04 Feb 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/peg/</guid>
+      <author></author>
+      <description>&lt;p&gt;Some reflections about pegs fun.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/peg/pegs.png&quot; alt=&quot;pegs&quot;&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Hybrid</title>
+      <link>http://localhost:8080/naturenet-blog/articles/hybridzone/</link>
+      <pubDate>Wed, 04 Feb 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/hybridzone/</guid>
+      <author></author>
+      <description>&lt;h2 id=&quot;-notes-on-re-creating-data-visualizations-of-the-hybrid-zone-of-the-black-capped-chickadee-and-the-carolina-chickadee-&quot;&gt;&lt;strong&gt;Notes on re-creating data visualizations of the hybrid zone of the black-capped chickadee and the carolina chickadee.&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Looking at the hybrid zone of the chickadees and the individual zones of the chickadees
+Look at the difference of the years of where people have spotted the chickadees, split into pre 1990 to post- 1990
+The only problem with this visualization is I am afraid it doesn’t accurately depict the moving border of the birds’ migration patterns because it is solely dependent on those who observed it ——-&amp;gt; problem with citizen science data mining: eBird harnesses the fact that bird watching is a hobby and proceeds to use digitally logged observations to look make some sort of conclusion about a specific bird population at whole, but this can’t be very accurate
+One person who sighted a chickadee in a region more southern than it typically is will cause the data in tableau to appear slightly skewed I think&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Need to figure out to convey ‘observation clusters’ to depict a more accurate representation of the data &lt;/p&gt;
+&lt;h2 id=&quot;perhaps-when-we-import-the-data-into-excel-something-becomes-corrupted-and-fills-certain-slots-in-with-an-x-because-it-is-ridiculous-that-they-would-have-data-and-a-location-and-time-place-etc-and-not-include-how-many-if-any-observed-it-there-will-need-to-look-into-this-&quot;&gt;Perhaps when we import the data into excel something becomes corrupted and fills certain slots in with an X – because it is ridiculous that they would have data and a location and time/place etc. and not include how many (if any) observed it there – will need to look into this. &lt;/h2&gt;
+&lt;h2 id=&quot;here-is-an-image-of-the-black-capped-chickadee-zone-between-1990-and-2004-in-the-northern-us-based-off-of-individual-observations-logged-through-ebird-&quot;&gt;Here is an image of the black-capped chickadee zone between 1990 and 2004 in the northern US based off of individual observations logged through eBird:&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/black-capped-90-04.PNG&quot; alt=&quot;black-capped chickadee zone as catalogued by eBird: 1990-2004&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here is the same black-capped species from 1950-1990:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/black-capped-50-90.PNG&quot; alt=&quot;black-capped&quot; title=&quot;Black-capped Chickadee zones: 1950-2004&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here is the Carolina chickadee zone as observed between the years 1950 and 1990:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/carolina-chicka-50-90.PNG&quot; alt=&quot;carolina&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here is our pre-liminary data visualization for the hybrid zone between these two chickadee types; it is based off of all fo the observations — the data we have contains observations from 1950 to 2004.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/chicka-hybrid-zone.PNG&quot; alt=&quot;hybrid&quot;&gt;&lt;/p&gt;
+</description>
+    </item>
+  </channel>
+</rss>
