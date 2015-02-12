@@ -5,9 +5,46 @@
     <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://localhost:8080</link>
     <description>citizen science, data, visualization</description>
-    <pubDate>Wed, 04 Feb 2015 17:00:00 -0700</pubDate>
+    <pubDate>Sun, 08 Feb 2015 17:00:00 -0700</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
+    <item>
+      <title>3D Printing Pegs</title>
+      <link>http://localhost:8080/naturenet-blog/articles/peg/</link>
+      <pubDate>Sun, 08 Feb 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/peg/</guid>
+      <author></author>
+      <description>&lt;h2 id=&quot;reflections-on-pegs-and-picture-books&quot;&gt;Reflections on Pegs and Picture Books&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/peg/CraftML.png&quot; alt=&quot;CraftML website&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Sikuli lab just launched &lt;a href=&quot;http://craftml.org&quot;&gt;CraftML&lt;/a&gt;, a website for easier 3D modeling of tactile picture book pages.  This is a subset of our &lt;a href=&quot;http://http://www.tactilepicturebooks.org/&quot;&gt;Tactile Picture Book&lt;/a&gt; project where we transform kids picture books into 3D prints that can be used by visually impaired children.  We hope that CraftML will enable teachers of visually impaired, parents, and visually impaired children themselves to easily create new pages without having to learn a complex modeling program.  &lt;/p&gt;
+&lt;p&gt;As a test of our initial release, I ran a lesson at a local high school in a class  on social justice.  We discussed the privilege of having objects that were designed with sight in mind and the goal of CraftML to empower people to create their own 3D books. Each high schooler was given a set of pegs and 3D cut foam board (see below) to physically model a 3D page and challenged each other to recreate that on the computer.  Afterwards, student explored additional models to create story or concept (e.g. height, size, which one doesn’t match) pages for visually impaired children.  These students loved the initial design (I even heard some girls say that they never thought coding could be so fun) and found several bugs that we’re currently fixing.&lt;/p&gt;
+&lt;p&gt;In addition to the potential of CraftML for those visual impairment, this test showed that CraftML may have general educational value in introducing students to a syntax similar to HTML and spatial modeling in an engaging way.&lt;/p&gt;
+&lt;p&gt;Specific lesson plans and tutorials for CraftML coming soon!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/peg/pegs.jpg&quot; alt=&quot;pegs photo&quot;&gt;&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Notes on re-creating data visualizations of the hybrid zone of the black-capped chickadee and the carolina chickadee</title>
+      <link>http://localhost:8080/naturenet-blog/articles/hybridzone/</link>
+      <pubDate>Wed, 04 Feb 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/hybridzone/</guid>
+      <author></author>
+      <description>&lt;p&gt;ISSUES&lt;/p&gt;
+&lt;p&gt;The only problem with some of the visualizations is that some of the data doesn’t accurately depict the moving border of the hybrid zone/migration zone/pattern because there are outliers that can skew the image visualized through Tableau. I do not see this as being just a problem with the eBird data but perhaps a problem with citizen science data mining in general: how accurately we can convey information via data visualization depends on how well the data is structured and I think that the way the eBird data (and other data from various citizen science platforms) is structured is not compatible with visualization systems. The goal then when designing citizen science platforms to collect data will be to create a platform which organizes/structures the data in a way such that it is understandable to the average persin and easy to use in conjunction with a specific visualization software (chosen by the website for example). &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Specific issues with tableau: &lt;/p&gt;
+&lt;p&gt;Need to figure out to convey ‘observation clusters’ to depict a more accurate representation of the data &lt;/p&gt;
+&lt;h2 id=&quot;perhaps-when-we-import-the-data-into-excel-something-becomes-corrupted-and-fills-certain-slots-in-with-an-x-because-it-is-ridiculous-that-they-would-have-data-and-a-location-and-time-place-etc-and-not-include-how-many-if-any-observed-it-there-will-need-to-look-into-this-&quot;&gt;Perhaps when we import the data into excel something becomes corrupted and fills certain slots in with an X – because it is ridiculous that they would have data and a location and time/place etc. and not include how many (if any) observed it there – will need to look into this. &lt;/h2&gt;
+&lt;h2 id=&quot;here-is-an-image-of-the-black-capped-chickadee-zone-between-1990-and-2004-in-the-northern-us-based-off-of-individual-observations-logged-through-ebird-&quot;&gt;Here is an image of the black-capped chickadee zone between 1990 and 2004 in the northern US based off of individual observations logged through eBird:&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/black-capped-90-04.PNG&quot; alt=&quot;black-capped chickadee zone as catalogued by eBird: 1990-2004&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here is the same black-capped species from 1950-1990:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/black-capped-50-90.PNG&quot; alt=&quot;black-capped&quot; title=&quot;Black-capped Chickadee zones: 1950-2004&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here is the Carolina chickadee zone as observed between the years 1950 and 1990:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/carolina-chicka-50-90.PNG&quot; alt=&quot;carolina&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here is our pre-liminary data visualization for the hybrid zone between these two chickadee types; it is based off of all fo the observations — the data we have contains observations from 1950 to 2004.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/chicka-hybrid-zone.PNG&quot; alt=&quot;hybrid&quot;&gt;&lt;/p&gt;
+</description>
+    </item>
     <item>
       <title>Ebird Questions</title>
       <link>http://localhost:8080/naturenet-blog/articles/ebirdquestions/</link>
@@ -39,40 +76,6 @@
 &lt;li&gt;What is the highest latitude an observation was taken?&lt;/li&gt;
 &lt;li&gt;When was the earliest date and the most recent date?&lt;/li&gt;
 &lt;/ol&gt;
-</description>
-    </item>
-    <item>
-      <title>Pegs</title>
-      <link>http://localhost:8080/naturenet-blog/articles/peg/</link>
-      <pubDate>Wed, 04 Feb 2015 17:00:00 -0700</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/peg/</guid>
-      <author></author>
-      <description>&lt;p&gt;Some reflections about pegs fun.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/peg/pegs.png&quot; alt=&quot;pegs&quot;&gt;&lt;/p&gt;
-</description>
-    </item>
-    <item>
-      <title>Hybrid</title>
-      <link>http://localhost:8080/naturenet-blog/articles/hybridzone/</link>
-      <pubDate>Wed, 04 Feb 2015 17:00:00 -0700</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/hybridzone/</guid>
-      <author></author>
-      <description>&lt;h2 id=&quot;-notes-on-re-creating-data-visualizations-of-the-hybrid-zone-of-the-black-capped-chickadee-and-the-carolina-chickadee-&quot;&gt;&lt;strong&gt;Notes on re-creating data visualizations of the hybrid zone of the black-capped chickadee and the carolina chickadee.&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Looking at the hybrid zone of the chickadees and the individual zones of the chickadees
-Look at the difference of the years of where people have spotted the chickadees, split into pre 1990 to post- 1990
-The only problem with this visualization is I am afraid it doesn’t accurately depict the moving border of the birds’ migration patterns because it is solely dependent on those who observed it ——-&amp;gt; problem with citizen science data mining: eBird harnesses the fact that bird watching is a hobby and proceeds to use digitally logged observations to look make some sort of conclusion about a specific bird population at whole, but this can’t be very accurate
-One person who sighted a chickadee in a region more southern than it typically is will cause the data in tableau to appear slightly skewed I think&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Need to figure out to convey ‘observation clusters’ to depict a more accurate representation of the data &lt;/p&gt;
-&lt;h2 id=&quot;perhaps-when-we-import-the-data-into-excel-something-becomes-corrupted-and-fills-certain-slots-in-with-an-x-because-it-is-ridiculous-that-they-would-have-data-and-a-location-and-time-place-etc-and-not-include-how-many-if-any-observed-it-there-will-need-to-look-into-this-&quot;&gt;Perhaps when we import the data into excel something becomes corrupted and fills certain slots in with an X – because it is ridiculous that they would have data and a location and time/place etc. and not include how many (if any) observed it there – will need to look into this. &lt;/h2&gt;
-&lt;h2 id=&quot;here-is-an-image-of-the-black-capped-chickadee-zone-between-1990-and-2004-in-the-northern-us-based-off-of-individual-observations-logged-through-ebird-&quot;&gt;Here is an image of the black-capped chickadee zone between 1990 and 2004 in the northern US based off of individual observations logged through eBird:&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/black-capped-90-04.PNG&quot; alt=&quot;black-capped chickadee zone as catalogued by eBird: 1990-2004&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Here is the same black-capped species from 1950-1990:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/black-capped-50-90.PNG&quot; alt=&quot;black-capped&quot; title=&quot;Black-capped Chickadee zones: 1950-2004&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Here is the Carolina chickadee zone as observed between the years 1950 and 1990:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/carolina-chicka-50-90.PNG&quot; alt=&quot;carolina&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Here is our pre-liminary data visualization for the hybrid zone between these two chickadee types; it is based off of all fo the observations — the data we have contains observations from 1950 to 2004.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/chicka-hybrid-zone.PNG&quot; alt=&quot;hybrid&quot;&gt;&lt;/p&gt;
 </description>
     </item>
   </channel>
