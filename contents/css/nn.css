@@ -1,0 +1,204 @@
+body {
+  font-family: 'LatoLatin';
+  min-height: 700px;
+}
+.nn-nav > li > a {
+  font-size: 25pt;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white; 
+}
+
+.nn-index-info {
+  margin-top: 15px;
+  font-size: 120%;
+}
+.nn-index button {
+  margin-top: 10px;
+}
+.nav-pills > li > a {
+  border-radius: 0;
+}
+.nn-index .carousel {
+  border: 3px solid rgba(147, 161, 52, 0.52);
+}
+.navbar-collapse {
+  padding: 0;
+}
+.nn-nav {
+  width: 100%;
+}
+.nn-nav a {
+  color: white;
+  font-family: 'LatoLatinLight';
+  font-size: 25px;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .nn-nav > li {
+    width: 20%;
+    text-align: center;
+  }
+}
+.nn-nav .nn-logo {
+  font-size: 20px;
+}
+.nn-nav li:nth-child(3n + 0) {
+  background: #5386bb;
+}
+.nn-nav li:nth-child(3n + 1) {
+  background: #f8ba12;
+}
+.nn-nav li:nth-child(3n + 2) {
+  background: #83b330;
+}
+.activity {
+  border: 1px solid #8da34e;
+  padding-bottom: 30px;
+}
+/* standard type of trick to get equal width border */
+.activity:nth-child(2n) {
+  border-right: 1px solid #8da34e;
+}
+.nn-navbar-header {
+  background: #cbdd93;
+}
+.container .row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.activities .row { 
+  padding-bottom: 0;
+  margin-bottom: 30px;
+}
+.observation {
+  height: 200px;
+  border: 1px solid #8da34e;
+  text-align: center;
+  padding: 0px;
+}
+.observation .tree::before {
+  font-size: 130pt;
+}
+.design-idea {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 70px;
+}
+.activity-info {
+  margin: 15px;
+  height: 100px;
+}
+.activity-picture {
+  width: 100px;
+  margin-top: 15px;
+  margin-right: 10px;
+  height: 100px;
+  float: left;
+  position: relative;
+}
+.activity-thumb {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  float: left;
+  position: relative;
+  padding-right: 60px;
+  border: 1px solid #8da34e;
+}
+.designs.container .fa-thumbs-o-up {
+  color: #777;
+  cursor: pointer;
+}
+.designs.container .fa-thumbs-o-up:hover {
+  color: black;
+}
+.designs .design-idea .account {
+  font-size: 80%;
+  color: #777;
+}
+.designs .design-idea .account .name {
+  color: #f8ba12;
+}
+
+.designs .design-idea {
+  opacity: 0.9;
+  font-size: 120%;
+}
+.designs .design-idea:hover {
+  opacity: 1;
+}
+.triangle-top {
+  height: 0;
+  width: 0;
+  border: 100px solid transparent;
+  border-top: 100px solid #cbdd93;
+  border-bottom: 100px solid #cbdd93;
+}
+.triangle-top-small {
+  height: 0;
+  width: 0;
+  border: 25px solid #ddd;
+  border-top: 25px solid grey;
+  border-bottom: 25px solid grey;
+}
+
+
+
+
+
+.lightbox-nav {
+  position: relative;
+  margin-bottom: 12px; /* the font-size of .btn-xs */
+  text-align: center;
+  font-size: 0; /* prevent the otherwise inherited font-size and line-height from adding extra space to the bottom of this div */
+}
+
+.lightbox-nav .btn-group {
+  vertical-align: top;
+}
+
+.lightbox-nav .close {
+  /* absolutely position this in order to center the nav buttons */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.lightbox-image-container {
+  position: relative;
+  text-align: center; /* center the image */
+}
+
+/* the caption overlays the top left corner of the image */
+.observation-lightbox {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #000;
+  font-size: 1.5em;
+  font-weight: bold;
+  left: 0;
+  margin: 0.5em 0.9em; /* the left and right margins are offset by 0.4em for the span box-shadow */
+  position: absolute;
+  text-align: left;
+  text-shadow: 0.1em 0.1em 0.2em rgba(255, 255, 255, 0.5);
+  top: 0;
+  padding: 3px;
+}
+
+.observation-lightbox .content {
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;  
+  /* pad the left and right of each line of text */
+ /* box-shadow: 0.4em 0 0 rgba(255, 255, 255, 0.5),
+    -0.4em 0 0 rgba(255, 255, 255, 0.75);*/
+}
+
+.observation-lightbox .account {
+  font-size: 80%;
+}
+
+.observation-lightbox .name {  
+  color: #EE7600;
+}
+
