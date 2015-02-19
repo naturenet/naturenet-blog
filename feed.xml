@@ -24,25 +24,177 @@
 </description>
     </item>
     <item>
-      <title>Notes on re-creating data visualizations of the hybrid zone of the black-capped chickadee and the carolina chickadee</title>
-      <link>http://localhost:8080/naturenet-blog/articles/hybridzone/</link>
-      <pubDate>Wed, 04 Feb 2015 17:00:00 -0700</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/hybridzone/</guid>
+      <title>Excel Methods for Data</title>
+      <link>http://localhost:8080/naturenet-blog/articles/ebirdquestions2/</link>
+      <pubDate>Sun, 08 Feb 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/ebirdquestions2/</guid>
       <author></author>
-      <description>&lt;p&gt;ISSUES&lt;/p&gt;
-&lt;p&gt;The only problem with some of the visualizations is that some of the data doesn’t accurately depict the moving border of the hybrid zone/migration zone/pattern because there are outliers that can skew the image visualized through Tableau. I do not see this as being just a problem with the eBird data but perhaps a problem with citizen science data mining in general: how accurately we can convey information via data visualization depends on how well the data is structured and I think that the way the eBird data (and other data from various citizen science platforms) is structured is not compatible with visualization systems. The goal then when designing citizen science platforms to collect data will be to create a platform which organizes/structures the data in a way such that it is understandable to the average persin and easy to use in conjunction with a specific visualization software (chosen by the website for example). &lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Specific issues with tableau: &lt;/p&gt;
-&lt;p&gt;Need to figure out to convey ‘observation clusters’ to depict a more accurate representation of the data &lt;/p&gt;
-&lt;h2 id=&quot;perhaps-when-we-import-the-data-into-excel-something-becomes-corrupted-and-fills-certain-slots-in-with-an-x-because-it-is-ridiculous-that-they-would-have-data-and-a-location-and-time-place-etc-and-not-include-how-many-if-any-observed-it-there-will-need-to-look-into-this-&quot;&gt;Perhaps when we import the data into excel something becomes corrupted and fills certain slots in with an X – because it is ridiculous that they would have data and a location and time/place etc. and not include how many (if any) observed it there – will need to look into this. &lt;/h2&gt;
-&lt;h2 id=&quot;here-is-an-image-of-the-black-capped-chickadee-zone-between-1990-and-2004-in-the-northern-us-based-off-of-individual-observations-logged-through-ebird-&quot;&gt;Here is an image of the black-capped chickadee zone between 1990 and 2004 in the northern US based off of individual observations logged through eBird:&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/black-capped-90-04.PNG&quot; alt=&quot;black-capped chickadee zone as catalogued by eBird: 1990-2004&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Here is the same black-capped species from 1950-1990:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/black-capped-50-90.PNG&quot; alt=&quot;black-capped&quot; title=&quot;Black-capped Chickadee zones: 1950-2004&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Here is the Carolina chickadee zone as observed between the years 1950 and 1990:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/carolina-chicka-50-90.PNG&quot; alt=&quot;carolina&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Here is our pre-liminary data visualization for the hybrid zone between these two chickadee types; it is based off of all fo the observations — the data we have contains observations from 1950 to 2004.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/chicka-hybrid-zone.PNG&quot; alt=&quot;hybrid&quot;&gt;&lt;/p&gt;
+      <description>&lt;h2 id=&quot;ebird-questions-pt-2-answered-with-a-subsection-of-data-in-excel&quot;&gt;eBird Questions Pt.2: Answered with a subsection of data in Excel&lt;/h2&gt;
+&lt;p&gt;To prepare for using the whole dataset and testing if my code works, I answered the 20 questions for a subset of the eBird data using Excel for Mac 2011.  To do this, I used the following methods (sometimes in combination):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Sort:&lt;/strong&gt;
+Go to Data &amp;gt; Sort.  Then select the column and order you would like.  This allowed me to quickly find largest and smallest numbers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Remove Duplicates:&lt;/strong&gt;
+Under the data tab, there is an icon called remove duplicates.  Select a column and then click the “remove duplicates” icons to get a simple list of features.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Counting:&lt;/strong&gt;
+There are multiple ways to count cells in excel based on different factors:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Count cells w/numbers: COUNT(valueX:valueY)&lt;/li&gt;
+&lt;li&gt;Count cells w/data: COUNTA(valueX:valueY)&lt;/li&gt;
+&lt;li&gt;Count blank cells: COUNTBLANK(valueX:valueY)&lt;/li&gt;
+&lt;li&gt;Count with exact phrase: COUNTIF(valueX:valueY, “condition”) &lt;/li&gt;
+&lt;li&gt;Count with string (phrase segment): COUNTIF(valueX:valueY, “&lt;em&gt;condition &lt;/em&gt;”)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Dragging to Apply Same Equation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Once you write a question, click on the bottom right corner of the cell and drag down.  This will copy that equation into all following cells.&lt;/li&gt;
+&lt;li&gt;Excel will automatically increment cell numbers in an equation.  If you do not want to increment all cell numbers, you can put money symbols in the cell and number (e.g. D2 —&amp;gt; $D$2).&lt;/li&gt;
+&lt;li&gt;To cite a cell on a different sheet, but the sheet name in single quotes followed by an exclamation before the cell number (e.g. ‘5000.txt’!D2).&lt;/li&gt;
+&lt;li&gt;For using a cell’s content as a condition in the count formula, you need to put the quotes and concatenate the cell number with an &amp;amp; symbol (e.g. COUNTIF(D2:D5000,”” &amp;amp; A2)).  Otherwise, it will search for the string “A2” in the cells.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Length:&lt;/strong&gt;
+To get a character count, I used the function LEN(valueX).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Delete Blanks:&lt;/strong&gt;
+To highlight/select all blank space in a column, select that column and go to Edit&amp;gt;Go to…  Click Special, then Blanks, then OK.  If you would like to delete these, right click on a selected space and click Delete.  You can then choose to delete the blank in that column or the whole row.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Merge Columns:&lt;/strong&gt;
+Make a new row that adds each cell and symbol/space using the concatenate symbol, &amp;amp; (e.g. =A2&amp;amp;”/“&amp;amp;B2).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Split Columns:&lt;/strong&gt;
+Go to data tab and select “Text to Columns”.  Choose “delimited” file type and what character separates the different parts to be split.  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Combo #1:&lt;/strong&gt;
+Copy and paste a column of data into a new row, remove the duplicates to get a simplified list, then use a COUNTIF function on the original column with a cell from the simplified chart as the condition, and finally drag the equation down and sort to get the largest or highest count of a feature.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Answers and Methods for Ebird questions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;How many total observations?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: COUNTA for first column&lt;/li&gt;
+&lt;li&gt;Answer: 4999&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What are the 3 most common birds?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Combo#1 for common bird names&lt;/li&gt;
+&lt;li&gt;Answer: Mourning Dove (48), American Robin (38), and European Starling (38)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What state has the most observations?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Combo #1 for states&lt;/li&gt;
+&lt;li&gt;Answer: Oregon with 523&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What is the most number of count made by a person in a single observation?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Sort data by observation count&lt;/li&gt;
+&lt;li&gt;Answer: 100000&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;How many unique taxonomy ids?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Combo #1 for taxonomic order&lt;/li&gt;
+&lt;li&gt;Answer: 913&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What is the longest common name?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Length on simplified common name list&lt;/li&gt;
+&lt;li&gt;Answer: Short-billed/Long-billed Dowitcher (34 characters)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Who observed the most birds?  List their first and last name. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Concatenate first and last name then combo #1 on that list&lt;/li&gt;
+&lt;li&gt;Answer: Rich Hoyer - 2799 separate observations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;How many kinds of hybrid species are there? &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: COUNTIF with condition “hybrid” on simplified common bird list &lt;/li&gt;
+&lt;li&gt;Answer: 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What time of year has the most observations?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Split Observation Date cell with delimiting factor as “/“.  Then COUNTIF to find the most common month.&lt;/li&gt;
+&lt;li&gt;Answer: November &amp;amp; October&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Which bird was observed in the most number of states/countries?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Concatenate bird and state tag, remove duplicates, split cells, and then COUNTIF using simplified bird list.&lt;/li&gt;
+&lt;li&gt;Answer: European Starling and Mourning Dove (13 states)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What is the average duration of an observation?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: =AVERAGE(valueX:valueY)&lt;/li&gt;
+&lt;li&gt;Answer: 596.06766&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;How many bird species have American in their common name?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Use simplified bird list and =COUNTIF(valueX:valueY, “&lt;em&gt;Value &lt;/em&gt;”)&lt;/li&gt;
+&lt;li&gt;Answer: 15&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What percentage of time do the observers identify a bird’s sex?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Remove blanks, count times with male or female, and divide that number by total observations.&lt;/li&gt;
+&lt;li&gt;Answer: 10/4999 = .002 = .2%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;How many different countries?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Remove duplicates and COUNTA().&lt;/li&gt;
+&lt;li&gt;Answer: 7&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Which country has the most number of observers?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Combo #1&lt;/li&gt;
+&lt;li&gt;Answer: Brazil&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Which column has the most number of missing data?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: COUNTA() for each column&lt;/li&gt;
+&lt;li&gt;Answer: Breeding Bird Atlas Code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Which locality type is the most frequent?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Combo #1&lt;/li&gt;
+&lt;li&gt;Answer: H (3839)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What is the longest trip comment?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Length function&lt;/li&gt;
+&lt;li&gt;Answer: 853 characters (comment left out for privacy)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;What is the highest latitude an observation was taken?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Sort on latitude column&lt;/li&gt;
+&lt;li&gt;Answer: 52.86 degrees N in England&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;When was the earliest date and the most recent date?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Method: Sort on date column&lt;/li&gt;
+&lt;li&gt;Answer: Earliest (3/2/53) and Most Recent (12/28/04)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     <item>
@@ -76,6 +228,28 @@
 &lt;li&gt;What is the highest latitude an observation was taken?&lt;/li&gt;
 &lt;li&gt;When was the earliest date and the most recent date?&lt;/li&gt;
 &lt;/ol&gt;
+</description>
+    </item>
+    <item>
+      <title>Notes on re-creating data visualizations of the hybrid zone of the black-capped chickadee and the carolina chickadee</title>
+      <link>http://localhost:8080/naturenet-blog/articles/hybridzone/</link>
+      <pubDate>Wed, 04 Feb 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/hybridzone/</guid>
+      <author></author>
+      <description>&lt;p&gt;ISSUES&lt;/p&gt;
+&lt;p&gt;The only problem with some of the visualizations is that some of the data doesn’t accurately depict the moving border of the hybrid zone/migration zone/pattern because there are outliers that can skew the image visualized through Tableau. I do not see this as being just a problem with the eBird data but perhaps a problem with citizen science data mining in general: how accurately we can convey information via data visualization depends on how well the data is structured and I think that the way the eBird data (and other data from various citizen science platforms) is structured is not compatible with visualization systems. The goal then when designing citizen science platforms to collect data will be to create a platform which organizes/structures the data in a way such that it is understandable to the average persin and easy to use in conjunction with a specific visualization software (chosen by the website for example). &lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Specific issues with tableau: &lt;/p&gt;
+&lt;p&gt;Need to figure out to convey ‘observation clusters’ to depict a more accurate representation of the data &lt;/p&gt;
+&lt;h2 id=&quot;perhaps-when-we-import-the-data-into-excel-something-becomes-corrupted-and-fills-certain-slots-in-with-an-x-because-it-is-ridiculous-that-they-would-have-data-and-a-location-and-time-place-etc-and-not-include-how-many-if-any-observed-it-there-will-need-to-look-into-this-&quot;&gt;Perhaps when we import the data into excel something becomes corrupted and fills certain slots in with an X – because it is ridiculous that they would have data and a location and time/place etc. and not include how many (if any) observed it there – will need to look into this. &lt;/h2&gt;
+&lt;h2 id=&quot;here-is-an-image-of-the-black-capped-chickadee-zone-between-1990-and-2004-in-the-northern-us-based-off-of-individual-observations-logged-through-ebird-&quot;&gt;Here is an image of the black-capped chickadee zone between 1990 and 2004 in the northern US based off of individual observations logged through eBird:&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/black-capped-90-04.PNG&quot; alt=&quot;black-capped chickadee zone as catalogued by eBird: 1990-2004&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here is the same black-capped species from 1950-1990:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/black-capped-50-90.PNG&quot; alt=&quot;black-capped&quot; title=&quot;Black-capped Chickadee zones: 1950-2004&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here is the Carolina chickadee zone as observed between the years 1950 and 1990:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/carolina-chicka-50-90.PNG&quot; alt=&quot;carolina&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Here is our pre-liminary data visualization for the hybrid zone between these two chickadee types; it is based off of all fo the observations — the data we have contains observations from 1950 to 2004.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/hybridzone/chicka-hybrid-zone.PNG&quot; alt=&quot;hybrid&quot;&gt;&lt;/p&gt;
 </description>
     </item>
   </channel>

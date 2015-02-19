@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/naturenet-blog/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>Excel Methods for Data - CU / NatureNet
+    </title>
+    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="citizen science, data, visualization">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/nn.css">
+  </head>
+  <body class="article-detail">
+    <header class="header">
+      <div class="container">
+        <h1>Excel Methods for Data</h1>
+        <p class="author">Written by <span class="author">Jackie Cameron</span>
+        </p>
+      </div>
+    </header>
+    <div id="content">
+      <div class="container">
+        <article class="article">
+          <section class="content"><h2 id="ebird-questions-pt-2-answered-with-a-subsection-of-data-in-excel">eBird Questions Pt.2: Answered with a subsection of data in&nbsp;Excel</h2>
+<p>To prepare for using the whole dataset and testing if my code works, I answered the 20 questions for a subset of the eBird data using Excel for Mac 2011.  To do this, I used the following methods (sometimes in&nbsp;combination):</p>
+<ol>
+<li><p><strong>Sort:</strong>
+Go to Data &gt; Sort.  Then select the column and order you would like.  This allowed me to quickly find largest and smallest&nbsp;numbers.</p>
+</li>
+<li><p><strong>Remove Duplicates:</strong>
+Under the data tab, there is an icon called remove duplicates.  Select a column and then click the “remove duplicates” icons to get a simple list of&nbsp;features.</p>
+</li>
+<li><p><strong>Counting:</strong>
+There are multiple ways to count cells in excel based on different&nbsp;factors:</p>
+<ul>
+<li>Count cells w/numbers:&nbsp;<span class="caps">COUNT</span>(valueX:valueY)</li>
+<li>Count cells w/data:&nbsp;<span class="caps">COUNTA</span>(valueX:valueY)</li>
+<li>Count blank cells:&nbsp;<span class="caps">COUNTBLANK</span>(valueX:valueY)</li>
+<li>Count with exact phrase: <span class="caps">COUNTIF</span>(valueX:valueY,&nbsp;“condition”) </li>
+<li>Count with string (phrase segment): <span class="caps">COUNTIF</span>(valueX:valueY, “<em>condition </em>”)</li>
+</ul>
+</li>
+<li><p><strong>Dragging to Apply Same&nbsp;Equation:</strong></p>
+<ul>
+<li>Once you write a question, click on the bottom right corner of the cell and drag down.  This will copy that equation into all following&nbsp;cells.</li>
+<li>Excel will automatically increment cell numbers in an equation.  If you do not want to increment all cell numbers, you can put money symbols in the cell and number (e.g. D2 —&gt;&nbsp;$D$2).</li>
+<li>To cite a cell on a different sheet, but the sheet name in single quotes followed by an exclamation before the cell number (e.g.&nbsp;‘5000.txt’!D2).</li>
+<li>For using a cell’s content as a condition in the count formula, you need to put the quotes and concatenate the cell number with an <span class="amp">&amp;</span> symbol (e.g. <span class="caps">COUNTIF</span>(D2:D5000,”” <span class="amp">&amp;</span> A2)).  Otherwise, it will search for the string “A2” in the&nbsp;cells.</li>
+</ul>
+</li>
+<li><p><strong>Length:</strong>
+To get a character count, I used the function&nbsp;<span class="caps">LEN</span>(valueX).</p>
+</li>
+<li><p><strong>Delete Blanks:</strong>
+To highlight/select all blank space in a column, select that column and go to Edit&gt;Go to…  Click Special, then Blanks, then <span class="caps">OK</span>.  If you would like to delete these, right click on a selected space and click Delete.  You can then choose to delete the blank in that column or the whole&nbsp;row.</p>
+</li>
+<li><p><strong>Merge Columns:</strong>
+Make a new row that adds each cell and symbol/space using the concatenate symbol, <span class="amp">&amp;</span> (e.g.&nbsp;=A2&amp;”/“&amp;B2).</p>
+</li>
+<li><p><strong>Split Columns:</strong>
+Go to data tab and select “Text to Columns”.  Choose “delimited” file type and what character separates the different parts to be&nbsp;split.  </p>
+</li>
+<li><p><strong>Combo #1:</strong>
+Copy and paste a column of data into a new row, remove the duplicates to get a simplified list, then use a <span class="caps">COUNTIF</span> function on the original column with a cell from the simplified chart as the condition, and finally drag the equation down and sort to get the largest or highest count of a&nbsp;feature.</p>
+</li>
+</ol>
+<p>Answers and Methods for Ebird&nbsp;questions:</p>
+<ol>
+<li><p>How many total&nbsp;observations?</p>
+<ul>
+<li>Method: <span class="caps">COUNTA</span> for first&nbsp;column</li>
+<li>Answer:&nbsp;4999</li>
+</ul>
+</li>
+<li><p>What are the 3 most common&nbsp;birds?</p>
+<ul>
+<li>Method: Combo#1 for common bird&nbsp;names</li>
+<li>Answer: Mourning Dove (48), American Robin (38), and European Starling&nbsp;(38)</li>
+</ul>
+</li>
+<li><p>What state has the most&nbsp;observations?</p>
+<ul>
+<li>Method: Combo #1 for&nbsp;states</li>
+<li>Answer: Oregon with&nbsp;523</li>
+</ul>
+</li>
+<li><p>What is the most number of count made by a person in a single&nbsp;observation?</p>
+<ul>
+<li>Method: Sort data by observation&nbsp;count</li>
+<li>Answer:&nbsp;100000</li>
+</ul>
+</li>
+<li><p>How many unique taxonomy&nbsp;ids?</p>
+<ul>
+<li>Method: Combo #1 for taxonomic&nbsp;order</li>
+<li>Answer:&nbsp;913</li>
+</ul>
+</li>
+<li><p>What is the longest common&nbsp;name?</p>
+<ul>
+<li>Method: Length on simplified common name&nbsp;list</li>
+<li>Answer: Short-billed/Long-billed Dowitcher (34&nbsp;characters)</li>
+</ul>
+</li>
+<li><p>Who observed the most birds?  List their first and last&nbsp;name. </p>
+<ul>
+<li>Method: Concatenate first and last name then combo #1 on that&nbsp;list</li>
+<li>Answer: Rich Hoyer - 2799 separate&nbsp;observations</li>
+</ul>
+</li>
+<li><p>How many kinds of hybrid species are&nbsp;there? </p>
+<ul>
+<li>Method: <span class="caps">COUNTIF</span> with condition “hybrid” on simplified common bird&nbsp;list </li>
+<li>Answer:&nbsp;0</li>
+</ul>
+</li>
+<li><p>What time of year has the most&nbsp;observations?</p>
+<ul>
+<li>Method: Split Observation Date cell with delimiting factor as “/“.  Then <span class="caps">COUNTIF</span> to find the most common&nbsp;month.</li>
+<li>Answer: November <span class="amp">&amp;</span>&nbsp;October</li>
+</ul>
+</li>
+<li><p>Which bird was observed in the most number of&nbsp;states/countries?</p>
+<ul>
+<li>Method: Concatenate bird and state tag, remove duplicates, split cells, and then <span class="caps">COUNTIF</span> using simplified bird&nbsp;list.</li>
+<li>Answer: European Starling and Mourning Dove (13&nbsp;states)</li>
+</ul>
+</li>
+<li><p>What is the average duration of an&nbsp;observation?</p>
+<ul>
+<li>Method:&nbsp;=<span class="caps">AVERAGE</span>(valueX:valueY)</li>
+<li>Answer:&nbsp;596.06766</li>
+</ul>
+</li>
+<li><p>How many bird species have American in their common&nbsp;name?</p>
+<ul>
+<li>Method: Use simplified bird list and =<span class="caps">COUNTIF</span>(valueX:valueY, “<em>Value </em>”)</li>
+<li>Answer:&nbsp;15</li>
+</ul>
+</li>
+<li><p>What percentage of time do the observers identify a bird’s&nbsp;sex?</p>
+<ul>
+<li>Method: Remove blanks, count times with male or female, and divide that number by total&nbsp;observations.</li>
+<li>Answer: 10/4999 = .002 =&nbsp;.2%</li>
+</ul>
+</li>
+<li><p>How many different&nbsp;countries?</p>
+<ul>
+<li>Method: Remove duplicates and&nbsp;<span class="caps">COUNTA</span>().</li>
+<li>Answer:&nbsp;7</li>
+</ul>
+</li>
+<li><p>Which country has the most number of&nbsp;observers?</p>
+<ul>
+<li>Method: Combo&nbsp;#1</li>
+<li>Answer:&nbsp;Brazil</li>
+</ul>
+</li>
+<li><p>Which column has the most number of missing&nbsp;data?</p>
+<ul>
+<li>Method: <span class="caps">COUNTA</span>() for each&nbsp;column</li>
+<li>Answer: Breeding Bird Atlas&nbsp;Code</li>
+</ul>
+</li>
+<li><p>Which locality type is the most&nbsp;frequent?</p>
+<ul>
+<li>Method: Combo&nbsp;#1</li>
+<li>Answer: H&nbsp;(3839)</li>
+</ul>
+</li>
+<li><p>What is the longest trip&nbsp;comment?</p>
+<ul>
+<li>Method: Length&nbsp;function</li>
+<li>Answer: 853 characters (comment left out for&nbsp;privacy)</li>
+</ul>
+</li>
+<li><p>What is the highest latitude an observation was&nbsp;taken?</p>
+<ul>
+<li>Method: Sort on latitude&nbsp;column</li>
+<li>Answer: 52.86 degrees N in&nbsp;England</li>
+</ul>
+</li>
+<li><p>When was the earliest date and the most recent&nbsp;date?</p>
+<ul>
+<li>Method: Sort on date&nbsp;column</li>
+<li>Answer: Earliest (3/2/53) and Most Recent&nbsp;(12/28/04)</li>
+</ul>
+</li>
+</ol>
+</section>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="nav"><a href="/naturenet-blog/">« Full blog</a></div>
+        <section class="about"><p>NatureNet is a projected funded by NSF to study citizen science.</p>
+
+        </section>
+        <section class="copy">
+          <p>&copy; 2015 Someone &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
+          </p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
