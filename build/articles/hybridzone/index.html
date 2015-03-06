@@ -1,30 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <base href="/naturenet-blog/">
+  <!-- Google Fonts-->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+  <!--
+  *************************************************************************
+  **************************   STYLE SHEET   *******************************
+  **************************************************************************
+  -->
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+  <!--if IE 7 html.ie7  
+  -->
+  <!--if IE 8 html.ie8  
+  -->
+  <!--if IE 9 html.ie9  
+  -->
+  <!--if lt IE 9
+  script.
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('aside');
+    document.createElement('footer');
+  -->
   <head>
-    <base href="/naturenet-blog/">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width">
-    <title>Notes on re-creating data visualizations of the hybrid zone of the black-capped chickadee and the carolina chickadee - CU / NatureNet
-    </title>
-    <link rel="alternate" href="http://localhost:8080/feed.xml" type="application/rss+xml" title="citizen science, data, visualization">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/nn.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Welcome to NatureNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!--
+    *************************************************************************
+    *****************                FAVICON               ********************
+    **************************************************************************
+    -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+    -->
+    <!--
+    *************************************************************************
+    **************************        JS       *******************************
+    **************************************************************************
+    -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/hoverIntent.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sfmenu.js"></script>
+    <script type="text/javascript" src="js/jquery.preloadcssimages.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!--
+    *************************************************************************
+    *****************            LIGHTBOX SCRIPT           ********************
+    **************************************************************************
+    -->
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+      jQuery('.fancybox').fancybox();
+      });
+    </script>
   </head>
-  <body class="article-detail">
-    <header class="header">
-      <div class="container">
-        <h1>Notes on re-creating data visualizations of the hybrid zone of the black-capped chickadee and the carolina chickadee</h1>
-        <p class="author">Written by <span class="author">Sloane O'Neill</span>
-        </p>
-      </div>
-    </header>
-    <div id="content">
-      <div class="container">
-        <article class="article">
-          <section class="content"><p><span class="caps">ISSUES</span></p>
+  <body>
+    <div class="bdywrapper"></div>
+    <!-- Start of nav wrapper-->
+    <div id="nav_wrapper">
+      <!-- Start of top logo-->
+      <div id="top_logo"><a href="#">
+          <h1>NatureNet          </h1></a></div>
+      <!-- End of top logo-->
+    </div>
+    <!-- Start of midsectionhr-->
+    <div id="midsectionhr"></div>
+    <!-- Start of bdywrapper-->
+    <div class="bdywrapper">
+      <!-- Start of main-->
+      <section id="main">
+        <!-- Start of main fullwidth wrapper-->
+        <div id="main_fullwidth_wrapper">
+          <!-- Start of blog wrapper-->
+          <article class="blog_wrapper">
+            <article class="article blog_wrapper">
+              <h1>Notes on re-creating data visualizations of the hybrid zone of the black-capped chickadee and the carolina chickadee
+                <!-- Start of featured text blog-->
+                <div class="featured_text_full">
+                  <!-- Start of intro-->
+                  <div class="intro">
+                  </div>
+                  <!-- End of intro-->
+                </div>
+              </h1>
+              <section class="content"><p><span class="caps">ISSUES</span></p>
 <p>The only problem with some of the visualizations is that some of the data doesn’t accurately depict the moving border of the hybrid zone/migration zone/pattern because there are outliers that can skew the image visualized through Tableau. I do not see this as being just a problem with the eBird data but perhaps a problem with citizen science data mining in general: how accurately we can convey information via data visualization depends on how well the data is structured and I think that the way the eBird data (and other data from various citizen science platforms) is structured is not compatible with visualization systems. The goal then when designing citizen science platforms to collect data will be to create a platform which organizes/structures the data in a way such that it is understandable to the average persin and easy to use in conjunction with a specific visualization software (chosen by the website for&nbsp;example). </p>
 <hr>
 <p>Specific issues with&nbsp;tableau: </p>
@@ -39,20 +106,46 @@
 <p>Here is our pre-liminary data visualization for the hybrid zone between these two chickadee types; it is based off of all fo the observations — the data we have contains observations from 1950 to&nbsp;2004.</p>
 <p><img src="/naturenet-blog/articles/hybridzone/chicka-hybrid-zone.PNG" alt="hybrid"></p>
 </section>
-        </article>
-      </div>
+            </article>
+            <div class="clear"></div>
+            <div class="big"></div>
+            <hr>
+            <!-- Start of navigation-->
+            <div class="navigation">
+              <!-- Start of alignleft-->
+              <div class="alignleft"><a href="#">Previous Blog Title</a></div>
+              <!-- End of alignleft-->
+              <!-- Start of alignright-->
+              <div class="alignright"><a href="#">Next Blog Title</a></div>
+              <!-- End of alignright-->
+            </div>
+            <!-- End of navigation-->
+            <!-- Start of clear fix-->
+            <div class="clear"></div>
+          </article>
+          <!-- End of featured text blog
+          // Start of clear fix
+          .clear
+          -->
+          <!-- End of blog wrapper-->
+        </div>
+        <!-- End of main fullwidth wrapper-->
+        <!-- Start of clear fix-->
+        <div class="clear"></div>
+      </section>
+      <!-- End of main-->
+      <!-- ******************************************************************** This is homepage newsletter signup ********************************************************************-->
     </div>
-    <footer>
-      <div class="container">
-        <div class="nav"><a href="/naturenet-blog/">« Full blog</a></div>
-        <section class="about"><p>NatureNet is a projected funded by NSF to study citizen science.</p>
-
-        </section>
-        <section class="copy">
-          <p>&copy; 2015 Someone &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a>
-          </p>
-        </section>
-      </div>
-    </footer>
+    <!-- End of bdywrapper-->
+    <!-- ******************************************************************** This is start of the footer ********************************************************************-->
+    <!-- Start of top-->
+    <div id="top">
+      <!-- Start of main section bg-->
+      <div id="main_section_bg"></div>
+      <!-- End of main section bg-->
+      <!-- Start of clear fix-->
+      <div class="clear"></div>
+    </div>
+    <!-- End of top-->
   </body>
 </html>

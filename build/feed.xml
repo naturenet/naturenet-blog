@@ -5,28 +5,83 @@
     <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
     <link>http://localhost:8080</link>
     <description>citizen science, data, visualization</description>
-    <pubDate>Sun, 08 Feb 2015 17:00:00 -0700</pubDate>
+    <pubDate>Thu, 05 Mar 2015 17:00:00 -0700</pubDate>
     <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
     <language>en</language>
     <item>
-      <title>3D Printing Pegs</title>
-      <link>http://localhost:8080/naturenet-blog/articles/peg/</link>
-      <pubDate>Sun, 08 Feb 2015 17:00:00 -0700</pubDate>
-      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/peg/</guid>
+      <title>Amazonian Motmot</title>
+      <link>http://localhost:8080/naturenet-blog/articles/motmot/</link>
+      <pubDate>Thu, 05 Mar 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/motmot/</guid>
       <author></author>
-      <description>&lt;h2 id=&quot;reflections-on-pegs-and-picture-books&quot;&gt;Reflections on Pegs and Picture Books&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/peg/CraftML.png&quot; alt=&quot;CraftML website&quot;&gt;&lt;/p&gt;
-&lt;p&gt;Sikuli lab just launched &lt;a href=&quot;http://craftml.org&quot;&gt;CraftML&lt;/a&gt;, a website for easier 3D modeling of tactile picture book pages.  This is a subset of our &lt;a href=&quot;http://http://www.tactilepicturebooks.org/&quot;&gt;Tactile Picture Book&lt;/a&gt; project where we transform kids picture books into 3D prints that can be used by visually impaired children.  We hope that CraftML will enable teachers of visually impaired, parents, and visually impaired children themselves to easily create new pages without having to learn a complex modeling program.  &lt;/p&gt;
-&lt;p&gt;As a test of our initial release, I ran a lesson at a local high school in a class  on social justice.  We discussed the privilege of having objects that were designed with sight in mind and the goal of CraftML to empower people to create their own 3D books. Each high schooler was given a set of pegs and 3D cut foam board (see below) to physically model a 3D page and challenged each other to recreate that on the computer.  Afterwards, student explored additional models to create story or concept (e.g. height, size, which one doesn’t match) pages for visually impaired children.  These students loved the initial design (I even heard some girls say that they never thought coding could be so fun) and found several bugs that we’re currently fixing.&lt;/p&gt;
-&lt;p&gt;In addition to the potential of CraftML for those visual impairment, this test showed that CraftML may have general educational value in introducing students to a syntax similar to HTML and spatial modeling in an engaging way.&lt;/p&gt;
-&lt;p&gt;Specific lesson plans and tutorials for CraftML coming soon!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/peg/pegs.jpg&quot; alt=&quot;pegs photo&quot;&gt;&lt;/p&gt;
+      <description>&lt;html&gt;&lt;head&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;http://sindresorhus.com/github-markdown-css/github-markdown.css&quot;/&gt;&lt;/head&gt;&lt;body&gt;&lt;article class=&quot;markdown-body&quot;&gt;
+&lt;pre&gt;
+load('data/ebird1k.tsv')
+&lt;/pre&gt;
+&lt;p&gt;Filter the data to only Amazonian Motmot.&lt;/p&gt;
+
+&lt;pre&gt;
+filterBy('COMMON NAME', 'Amazonian Motmot')
+show()
+&lt;/pre&gt;&lt;div style=&quot;overflow:scroll&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;42&lt;/th&gt;&lt;th&gt;GLOBAL UNIQUE IDENTIFIER&lt;/th&gt;&lt;th&gt;TAXONOMIC ORDER&lt;/th&gt;&lt;th&gt;CATEGORY&lt;/th&gt;&lt;th&gt;COMMON NAME&lt;/th&gt;&lt;th&gt;SCIENTIFIC NAME&lt;/th&gt;&lt;th&gt;SUBSPECIES COMMON NAME&lt;/th&gt;&lt;th&gt;SUBSPECIES SCIENTIFIC NAME&lt;/th&gt;&lt;th&gt;OBSERVATION COUNT&lt;/th&gt;&lt;th&gt;BREEDING BIRD ATLAS CODE&lt;/th&gt;&lt;th&gt;AGE/SEX&lt;/th&gt;&lt;th&gt;COUNTRY&lt;/th&gt;&lt;th&gt;COUNTRY CODE&lt;/th&gt;&lt;th&gt;STATE&lt;/th&gt;&lt;th&gt;STATE CODE&lt;/th&gt;&lt;th&gt;COUNTY&lt;/th&gt;&lt;th&gt;COUNTY CODE&lt;/th&gt;&lt;th&gt;IBA CODE&lt;/th&gt;&lt;th&gt;BCR CODE&lt;/th&gt;&lt;th&gt;LOCALITY&lt;/th&gt;&lt;th&gt;LOCALITY ID&lt;/th&gt;&lt;th&gt; LOCALITY TYPE&lt;/th&gt;&lt;th&gt;LATITUDE&lt;/th&gt;&lt;th&gt;LONGITUDE&lt;/th&gt;&lt;th&gt;OBSERVATION DATE&lt;/th&gt;&lt;th&gt;TIME OBSERVATIONS STARTED&lt;/th&gt;&lt;th&gt;TRIP COMMENTS&lt;/th&gt;&lt;th&gt;SPECIES COMMENTS&lt;/th&gt;&lt;th&gt;OBSERVER ID&lt;/th&gt;&lt;th&gt;FIRST NAME&lt;/th&gt;&lt;th&gt;LAST NAME&lt;/th&gt;&lt;th&gt;SAMPLING EVENT IDENTIFIER&lt;/th&gt;&lt;th&gt;PROTOCOL TYPE&lt;/th&gt;&lt;th&gt;PROJECT CODE&lt;/th&gt;&lt;th&gt;DURATION MINUTES&lt;/th&gt;&lt;th&gt;EFFORT DISTANCE KM&lt;/th&gt;&lt;th&gt;EFFORT AREA HA&lt;/th&gt;&lt;th&gt;NUMBER OBSERVERS&lt;/th&gt;&lt;th&gt;ALL SPECIES REPORTED&lt;/th&gt;&lt;th&gt;GROUP IDENTIFIER&lt;/th&gt;&lt;th&gt;APPROVED&lt;/th&gt;&lt;th&gt;REVIEWED&lt;/th&gt;&lt;th&gt;REASON&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;URN:CornellLabOfOrnithology:EBIRD:OBS100011559&lt;/td&gt;&lt;td&gt;9523&lt;/td&gt;&lt;td&gt;species&lt;/td&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;Momotus momota&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Brazil&lt;/td&gt;&lt;td&gt;BR&lt;/td&gt;&lt;td&gt;Rondônia&lt;/td&gt;&lt;td&gt;BR-RO&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Pousada Ecolôgica Rancho Grande&lt;/td&gt;&lt;td&gt;L1009712&lt;/td&gt;&lt;td&gt;H&lt;/td&gt;&lt;td&gt;-10.297933&lt;/td&gt;&lt;td&gt;-62.866667&lt;/td&gt;&lt;td&gt;2004-10-21&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;WINGS tour&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;obsr37316&lt;/td&gt;&lt;td&gt;Rich&lt;/td&gt;&lt;td&gt;Hoyer&lt;/td&gt;&lt;td&gt;S7003400&lt;/td&gt;&lt;td&gt;eBird - Casual Observation&lt;/td&gt;&lt;td&gt;EBIRD&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;URN:CornellLabOfOrnithology:EBIRD:OBS100011865&lt;/td&gt;&lt;td&gt;9523&lt;/td&gt;&lt;td&gt;species&lt;/td&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;Momotus momota&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Brazil&lt;/td&gt;&lt;td&gt;BR&lt;/td&gt;&lt;td&gt;Rondônia&lt;/td&gt;&lt;td&gt;BR-RO&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Pousada Ecolôgica Rancho Grande&lt;/td&gt;&lt;td&gt;L1009712&lt;/td&gt;&lt;td&gt;H&lt;/td&gt;&lt;td&gt;-10.297933&lt;/td&gt;&lt;td&gt;-62.866667&lt;/td&gt;&lt;td&gt;2004-10-25&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;WINGS tour&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;obsr37316&lt;/td&gt;&lt;td&gt;Rich&lt;/td&gt;&lt;td&gt;Hoyer&lt;/td&gt;&lt;td&gt;S7003404&lt;/td&gt;&lt;td&gt;eBird - Casual Observation&lt;/td&gt;&lt;td&gt;EBIRD&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;URN:CornellLabOfOrnithology:EBIRD:OBS100005211&lt;/td&gt;&lt;td&gt;9523&lt;/td&gt;&lt;td&gt;species&lt;/td&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;Momotus momota&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Brazil&lt;/td&gt;&lt;td&gt;BR&lt;/td&gt;&lt;td&gt;Rondônia&lt;/td&gt;&lt;td&gt;BR-RO&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Pousada Ecolôgica Rancho Grande&lt;/td&gt;&lt;td&gt;L1009712&lt;/td&gt;&lt;td&gt;H&lt;/td&gt;&lt;td&gt;-10.297933&lt;/td&gt;&lt;td&gt;-62.866667&lt;/td&gt;&lt;td&gt;2002-10-29&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;obsr37316&lt;/td&gt;&lt;td&gt;Rich&lt;/td&gt;&lt;td&gt;Hoyer&lt;/td&gt;&lt;td&gt;S7003059&lt;/td&gt;&lt;td&gt;eBird - Casual Observation&lt;/td&gt;&lt;td&gt;EBIRD&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;URN:CornellLabOfOrnithology:EBIRD:OBS100005902&lt;/td&gt;&lt;td&gt;9523&lt;/td&gt;&lt;td&gt;species&lt;/td&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;Momotus momota&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Brazil&lt;/td&gt;&lt;td&gt;BR&lt;/td&gt;&lt;td&gt;Rondônia&lt;/td&gt;&lt;td&gt;BR-RO&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Pousada Ecolôgica Rancho Grande&lt;/td&gt;&lt;td&gt;L1009712&lt;/td&gt;&lt;td&gt;H&lt;/td&gt;&lt;td&gt;-10.297933&lt;/td&gt;&lt;td&gt;-62.866667&lt;/td&gt;&lt;td&gt;2002-11-01&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;obsr37316&lt;/td&gt;&lt;td&gt;Rich&lt;/td&gt;&lt;td&gt;Hoyer&lt;/td&gt;&lt;td&gt;S7003070&lt;/td&gt;&lt;td&gt;eBird - Casual Observation&lt;/td&gt;&lt;td&gt;EBIRD&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;URN:CornellLabOfOrnithology:EBIRD:OBS100007175&lt;/td&gt;&lt;td&gt;9523&lt;/td&gt;&lt;td&gt;species&lt;/td&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;Momotus momota&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Brazil&lt;/td&gt;&lt;td&gt;BR&lt;/td&gt;&lt;td&gt;Rondônia&lt;/td&gt;&lt;td&gt;BR-RO&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Rio Verde to Porto Velho&lt;/td&gt;&lt;td&gt;L1009715&lt;/td&gt;&lt;td&gt;H&lt;/td&gt;&lt;td&gt;-8.5236&lt;/td&gt;&lt;td&gt;-63.452117&lt;/td&gt;&lt;td&gt;2002-11-20&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;obsr37316&lt;/td&gt;&lt;td&gt;Rich&lt;/td&gt;&lt;td&gt;Hoyer&lt;/td&gt;&lt;td&gt;S7003084&lt;/td&gt;&lt;td&gt;eBird - Casual Observation&lt;/td&gt;&lt;td&gt;EBIRD&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;td style=&quot;color:#999&quot;&gt;7 rows in total&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;There are tons of fields. We are only interested in the locations in which these birds are observed and how many were counted during each observation.&lt;/p&gt;
+
+&lt;pre&gt;
+select(['COMMON NAME','LOCALITY','OBSERVATION COUNT'])
+show()
+&lt;/pre&gt;&lt;div style=&quot;overflow:scroll&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;COMMON NAME&lt;/th&gt;&lt;th&gt;LOCALITY&lt;/th&gt;&lt;th&gt;OBSERVATION COUNT&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;Pousada Ecolôgica Rancho Grande&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;Pousada Ecolôgica Rancho Grande&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;Pousada Ecolôgica Rancho Grande&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;Pousada Ecolôgica Rancho Grande&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;Rio Verde to Porto Velho&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;td style=&quot;color:#999&quot;&gt;7 rows in total&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;Let&amp;#39;s group these observations by localtions. The relevant field is &lt;em&gt;LOCALITY&lt;/em&gt;.&lt;/p&gt;
+
+&lt;pre&gt;
+groupBy('LOCALITY')
+show()
+&lt;/pre&gt;&lt;div style=&quot;overflow:scroll&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;LOCALITY&lt;/th&gt;&lt;th&gt;count&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Pousada Ecolôgica Rancho Grande&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;COMMON NAME&lt;/th&gt;&lt;th&gt;OBSERVATION COUNT&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Rio Verde to Porto Velho&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;COMMON NAME&lt;/th&gt;&lt;th&gt;OBSERVATION COUNT&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;td style=&quot;color:#999&quot;&gt;2 rows in total&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;We found six observations were made in Pousada EcolÃ´gica Rancho Grande and only one was made in Rio Verde to Porto Velho. &lt;/p&gt;
+&lt;p&gt;In each observation, there may be anywhere from one bird or thousands of birds in a flock seen by an observation. Such information is stored in &lt;em&gt;OBSERVATION_COUNT&lt;/em&gt;. Let&amp;#39;s sum up the numbers under the &lt;em&gt;OBSERVATION_COUNT&lt;/em&gt; column to find out how many birds in total observed in each location.&lt;/p&gt;
+
+&lt;pre&gt;
+sum('OBSERVATION COUNT')
+show()
+&lt;/pre&gt;&lt;div style=&quot;overflow:scroll&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;LOCALITY&lt;/th&gt;&lt;th&gt;count&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;sum-observation-count&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Pousada Ecolôgica Rancho Grande&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;COMMON NAME&lt;/th&gt;&lt;th&gt;OBSERVATION COUNT&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;td&gt;13&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Rio Verde to Porto Velho&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;COMMON NAME&lt;/th&gt;&lt;th&gt;OBSERVATION COUNT&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Amazonian Motmot&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table&gt;&lt;tr&gt;&lt;td style=&quot;color:#999&quot;&gt;2 rows in total&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;p&gt;Finally, we take a total sum to find out in total how many birds were counted across all locations.&lt;/p&gt;
+
+&lt;pre&gt;
+sum('sum-observation-count')
+show()
+&lt;/pre&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;15&lt;/tr&gt;&lt;/td&gt;&lt;/table&gt;
+&lt;p&gt;The answer is 15.&lt;/p&gt;
+&lt;/article&gt;&lt;/body&gt;&lt;/html&gt;</description>
+    </item>
+    <item>
+      <title>Ebird Questions 3</title>
+      <link>http://localhost:8080/naturenet-blog/articles/ebirdquestions3/</link>
+      <pubDate>Tue, 24 Feb 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/ebirdquestions3/</guid>
+      <author></author>
+      <description>&lt;p&gt;Differential Versions of eBird Questions:&lt;/p&gt;
+&lt;p&gt;Certain types of questions were more difficult to change (how many, who).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is the difference in count between the most and least common birds?&lt;/li&gt;
+&lt;li&gt;What is the difference between the US state with the most and least observations?&lt;/li&gt;
+&lt;li&gt;What is the difference between the most and least number of count made by a person in a single observation?&lt;/li&gt;
+&lt;li&gt;What is the difference in character length between the shortest and longest names?&lt;/li&gt;
+&lt;li&gt;How many months between the time of year has the most observations and that with the least?&lt;/li&gt;
+&lt;li&gt;What is the difference in observation count for the bird in the most number of states/countries and that in the least?&lt;/li&gt;
+&lt;li&gt;What is the difference between the longest and shortest duration of an observation?&lt;/li&gt;
+&lt;li&gt;How many bird species have American in their common name as opposed to those with European in their name?&lt;/li&gt;
+&lt;li&gt;Whats the difference between in number of observers for country with the most as opposed to that with the least?&lt;/li&gt;
+&lt;li&gt;How close is the difference between the 5 columns missing the most data as opposed to the 5 missing the least?&lt;/li&gt;
+&lt;li&gt;What is the range of observations between the most frequent and least frequent locality types?&lt;/li&gt;
+&lt;li&gt;What is the difference between the longest and shortest trip comment?&lt;/li&gt;
+&lt;li&gt;What is difference between the highest and lowest latitude?&lt;/li&gt;
+&lt;li&gt;How long was there between the first and last observation?&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     <item>
       <title>Excel Methods for Data</title>
       <link>http://localhost:8080/naturenet-blog/articles/ebirdquestions2/</link>
-      <pubDate>Sun, 08 Feb 2015 17:00:00 -0700</pubDate>
+      <pubDate>Thu, 19 Feb 2015 17:00:00 -0700</pubDate>
       <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/ebirdquestions2/</guid>
       <author></author>
       <description>&lt;h2 id=&quot;ebird-questions-pt-2-answered-with-a-subsection-of-data-in-excel&quot;&gt;eBird Questions Pt.2: Answered with a subsection of data in Excel&lt;/h2&gt;
@@ -200,7 +255,7 @@ Copy and paste a column of data into a new row, remove the duplicates to get a s
     <item>
       <title>Ebird Questions</title>
       <link>http://localhost:8080/naturenet-blog/articles/ebirdquestions/</link>
-      <pubDate>Wed, 04 Feb 2015 17:00:00 -0700</pubDate>
+      <pubDate>Mon, 09 Feb 2015 17:00:00 -0700</pubDate>
       <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/ebirdquestions/</guid>
       <author></author>
       <description>&lt;p&gt;20 Questions to Challenge Jackie with respect to ebird data:&lt;/p&gt;
@@ -228,6 +283,21 @@ Copy and paste a column of data into a new row, remove the duplicates to get a s
 &lt;li&gt;What is the highest latitude an observation was taken?&lt;/li&gt;
 &lt;li&gt;When was the earliest date and the most recent date?&lt;/li&gt;
 &lt;/ol&gt;
+</description>
+    </item>
+    <item>
+      <title>3D Printing Pegs</title>
+      <link>http://localhost:8080/naturenet-blog/articles/peg/</link>
+      <pubDate>Sun, 08 Feb 2015 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/naturenet-blog/articles/peg/</guid>
+      <author></author>
+      <description>&lt;h2 id=&quot;reflections-on-pegs-and-picture-books&quot;&gt;Reflections on Pegs and Picture Books&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/peg/CraftML.png&quot; alt=&quot;CraftML website&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Sikuli lab just launched &lt;a href=&quot;http://craftml.org&quot;&gt;CraftML&lt;/a&gt;, a website for easier 3D modeling of tactile picture book pages.  This is a subset of our &lt;a href=&quot;http://http://www.tactilepicturebooks.org/&quot;&gt;Tactile Picture Book&lt;/a&gt; project where we transform kids picture books into 3D prints that can be used by visually impaired children.  We hope that CraftML will enable teachers of visually impaired, parents, and visually impaired children themselves to easily create new pages without having to learn a complex modeling program.  &lt;/p&gt;
+&lt;p&gt;As a test of our initial release, I ran a lesson at a local high school in a class  on social justice.  We discussed the privilege of having objects that were designed with sight in mind and the goal of CraftML to empower people to create their own 3D books. Each high schooler was given a set of pegs and 3D cut foam board (see below) to physically model a 3D page and challenged each other to recreate that on the computer.  Afterwards, student explored additional models to create story or concept (e.g. height, size, which one doesn’t match) pages for visually impaired children.  These students loved the initial design (I even heard some girls say that they never thought coding could be so fun) and found several bugs that we’re currently fixing.&lt;/p&gt;
+&lt;p&gt;In addition to the potential of CraftML for those visual impairment, this test showed that CraftML may have general educational value in introducing students to a syntax similar to HTML and spatial modeling in an engaging way.&lt;/p&gt;
+&lt;p&gt;Specific lesson plans and tutorials for CraftML coming soon!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/naturenet-blog/articles/peg/pegs.jpg&quot; alt=&quot;pegs photo&quot;&gt;&lt;/p&gt;
 </description>
     </item>
     <item>
