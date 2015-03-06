@@ -1,0 +1,56 @@
+base(href='/naturenet-blog/')
+// Google Fonts
+link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic', rel='stylesheet', type='text/css')
+//
+  *************************************************************************
+  **************************   STYLE SHEET   *******************************
+  **************************************************************************
+link(href='css/main.css', rel='stylesheet', type='text/css')
+link(href='css/jquery.fancybox.css', rel='stylesheet', type='text/css')
+//if IE 7 
+  html.ie7  
+//if IE 8 
+  html.ie8  
+//if IE 9 
+  html.ie9  
+//if lt IE 9
+  script.
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('aside');
+    document.createElement('footer');
+head
+  meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+  title Welcome to NatureNet
+  meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+  //
+    *************************************************************************
+    *****************                FAVICON               ********************
+    **************************************************************************
+  link(rel='shortcut icon', href='img/favicon.png')
+  //if lt IE 9
+    script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+  //
+    *************************************************************************
+    **************************        JS       *******************************
+    **************************************************************************
+  script(type='text/javascript', src='js/jquery.js')
+  script(type='text/javascript', src='js/jquery.easing.1.3.js')
+  script(type='text/javascript', src='js/hoverIntent.js')
+  script(type='text/javascript', src='js/respond.min.js')
+  script(type='text/javascript', src='js/jquery.sfmenu.js')
+  script(type='text/javascript', src='js/jquery.preloadcssimages.js')
+  script(type='text/javascript', src='js/jquery.fancybox.js')
+  script(type='text/javascript', src='js/jquery.tweet.js')
+  script(type='text/javascript', src='js/custom.js')
+  //
+    *************************************************************************
+    *****************            LIGHTBOX SCRIPT           ********************
+    **************************************************************************
+  script(type='text/javascript').
+    jQuery(document).ready(function() {
+    jQuery('.fancybox').fancybox();
+    });
+  

@@ -1,7 +1,7 @@
 ---
 title: Excel Methods for Data
 author: Jackie Cameron
-date: 2015-02-09
+date: 2015-02-20
 template: article.jade
 ---
 

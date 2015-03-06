@@ -7,7 +7,8 @@
   },
   "baseUrl": "/naturenet-blog/",  
   "plugins": [
-    "./plugins/paginator.coffee"
+    "./plugins/paginator.coffee",
+    "./plugins/vizdown.coffee"
   ],
   "require": {
     "moment": "moment",

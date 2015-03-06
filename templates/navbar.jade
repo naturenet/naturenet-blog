@@ -1,0 +1,67 @@
+// Start of bdywrapper
+.bdywrapper
+  // Start of nav wrapper
+  #nav_wrapper
+    // Start of top logo
+    #top_logo
+      a(href='#')
+        img(src='img/top_logo.png', alt='logo')
+    // End of top logo
+    // Start of searchbox
+    #searchbox
+      // Start of search box
+      form#searchform(role='search', method='get', action='#')
+        span.searchme
+        input#searchBox(type='text', value='search', name='s', onblur="if(this.value == '') { this.value = 'search'; }", onfocus="if(this.value == 'search') { this.value = ''; }")
+      // End of searchbox
+    // End of searchbox
+    // Start of clear fix
+    .clear
+  // End of nav wrapper
+  // Start of topmenu wrapper
+  #topmenu_wrapper
+    // Start of topmenu
+    nav#topmenu
+      ul.sf-menu
+        li
+          a(href='index.html') Home
+        |         
+        li
+          a(href='index2.html') Home - Alternative
+        li
+          a(href='about.html') About Us
+        li
+          a(href='events.html') Events
+        li
+          a(href='#') Pages
+          ul.sub-menu
+            li
+              a(href='leftsidebar.html') Left Sidebar
+            li
+              a(href='rightsidebar.html') Right Sidebar
+            li
+              a(href='fullwidth.html') Fullwidth Page
+            li
+              a(href='error.html') 404 Page
+            li
+              a(href='columns.html') Columns
+            li
+              a(href='styles.html') Styles
+        li
+          a.active(href='blog.html') Blog
+          ul.sub-menu
+            li
+              a(href='blog_left.html') Left Sidebar
+            li
+              a(href='blog_right.html') Right Sidebar
+            li
+              a.active(href='blog_fullwidth.html') Fullwidth Sidebar
+        li
+          a(href='photos.html') Photos
+        li
+          a(href='contact.html') Contact
+      // Start of clear fix
+      .clear
+    // End of topmenu
+  // End of topmenu wrapper
+// End of bdywrapper

@@ -1,0 +1,51 @@
+doctype html
+block vars
+  - var bodyclass = null;
+html(lang='en')
+  head
+    block head
+      base(href='/naturenet-blog/')
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+      meta(name='viewport', content='width=device-width')
+      title
+        block title
+          = locals.name
+      link(rel='stylesheet', href='css/main.css')
+      script(type='text/javascript', src='js/jquery.js')
+      script(type='text/javascript', src='js/jquery.easing.1.3.js')
+      script(type='text/javascript', src='js/hoverIntent.js')
+      script(type='text/javascript', src='js/respond.min.js')
+      script(type='text/javascript', src='js/jquery.sfmenu.js')
+      script(type='text/javascript', src='js/jquery.preloadcssimages.js')
+      script(type='text/javascript', src='js/jquery.fancybox.js')
+      script(type='text/javascript', src='js/jquery.tweet.js')
+      script(type='text/javascript', src='js/custom.js')
+
+  body
+    header.nav_wrapper
+
+    div.bdywrapper
+      div#nav_wrapper
+        div#top_logo
+          block header
+          h1
+              a(href=locals.url)= locals.name
+            p.description= locals.description
+        div#topmenu_wrapper
+
+    div.bdywrapper
+      div#main
+        div#main_fullwidth_wrapper
+          block content          
+
+
+    footer#outer_footer_wrapper
+      div#footer_wrapper
+        block footer
+          section.about
+            !=contents['about.md'].html
+          section.copy
+            p &copy; #{ new Date().getFullYear() } #{ locals.owner } &mdash; powered by&nbsp;
+              a(href='https://github.com/jnordberg/wintersmith') Wintersmith
+              //- please leave the "powered by" if you use the design

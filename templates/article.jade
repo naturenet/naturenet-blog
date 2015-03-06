@@ -15,7 +15,14 @@ block header
     mixin author(page.metadata.author)
 
 block content
-  article.article
+  article.article.blog_wrapper
+    h1 #{page.title}
+            // Start of featured text blog
+            .featured_text_full
+              // Start of intro
+              .intro
+                = page.metadata.intro
+              // End of intro
     section.content!= typogr(page.html).typogrify()
 
 block prepend footer
