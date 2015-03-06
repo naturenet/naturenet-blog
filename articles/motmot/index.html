@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <base href="/naturenet-blog/">
+  <!-- Google Fonts-->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+  <!--
+  *************************************************************************
+  **************************   STYLE SHEET   *******************************
+  **************************************************************************
+  -->
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+  <!--if IE 7 html.ie7  
+  -->
+  <!--if IE 8 html.ie8  
+  -->
+  <!--if IE 9 html.ie9  
+  -->
+  <!--if lt IE 9
+  script.
+    document.createElement('header');
+    document.createElement('nav');
+    document.createElement('section');
+    document.createElement('article');
+    document.createElement('aside');
+    document.createElement('footer');
+  -->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Welcome to NatureNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!--
+    *************************************************************************
+    *****************                FAVICON               ********************
+    **************************************************************************
+    -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+    -->
+    <!--
+    *************************************************************************
+    **************************        JS       *******************************
+    **************************************************************************
+    -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/hoverIntent.js"></script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sfmenu.js"></script>
+    <script type="text/javascript" src="js/jquery.preloadcssimages.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!--
+    *************************************************************************
+    *****************            LIGHTBOX SCRIPT           ********************
+    **************************************************************************
+    -->
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+      jQuery('.fancybox').fancybox();
+      });
+    </script>
+  </head>
+  <body>
+    <div class="bdywrapper"></div>
+    <!-- Start of nav wrapper-->
+    <div id="nav_wrapper">
+      <!-- Start of top logo-->
+      <div id="top_logo"><a href="#">
+          <h1>NatureNet          </h1></a></div>
+      <!-- End of top logo-->
+    </div>
+    <!-- Start of midsectionhr-->
+    <div id="midsectionhr"></div>
+    <!-- Start of bdywrapper-->
+    <div class="bdywrapper">
+      <!-- Start of main-->
+      <section id="main">
+        <!-- Start of main fullwidth wrapper-->
+        <div id="main_fullwidth_wrapper">
+          <!-- Start of blog wrapper-->
+          <article class="blog_wrapper">
+            <article class="article blog_wrapper">
+              <h1>Amazonian Motmot
+                <!-- Start of featured text blog-->
+                <div class="featured_text_full">
+                  <!-- Start of intro-->
+                  <div class="intro">Let's learn about Amazonian Motmot from the ebird data
+                  </div>
+                  <!-- End of intro-->
+                </div>
+              </h1>
+              <section class="content"><html><head><link rel="stylesheet" href="http://sindresorhus.com/github-markdown-css/github-markdown.css"/></head><body><article class="markdown-body">
+<pre>
+load('data/ebird1k.tsv')
+</pre>
+<p>Filter the data to only Amazonian&nbsp;Motmot.</p>
+
+<pre>
+filterBy('COMMON NAME', 'Amazonian Motmot')
+show()
+</pre><div style="overflow:scroll"><table><tr><th>42</th><th><span class="caps">GLOBAL</span> UNIQUE IDENTIFIER</th><th><span class="caps">TAXONOMIC</span> ORDER</th><th><span class="caps">CATEGORY</span></th><th><span class="caps">COMMON</span> NAME</th><th><span class="caps">SCIENTIFIC</span> NAME</th><th><span class="caps">SUBSPECIES</span> COMMON NAME</th><th><span class="caps">SUBSPECIES</span> SCIENTIFIC NAME</th><th><span class="caps">OBSERVATION</span> COUNT</th><th><span class="caps">BREEDING</span> BIRD ATLAS CODE</th><th><span class="caps">AGE</span>/SEX</th><th><span class="caps">COUNTRY</span></th><th><span class="caps">COUNTRY</span> CODE</th><th><span class="caps">STATE</span></th><th><span class="caps">STATE</span> CODE</th><th><span class="caps">COUNTY</span></th><th><span class="caps">COUNTY</span> CODE</th><th><span class="caps">IBA</span> CODE</th><th><span class="caps">BCR</span> CODE</th><th><span class="caps">LOCALITY</span></th><th><span class="caps">LOCALITY</span> ID</th><th> <span class="caps">LOCALITY</span> TYPE</th><th><span class="caps">LATITUDE</span></th><th><span class="caps">LONGITUDE</span></th><th><span class="caps">OBSERVATION</span> DATE</th><th><span class="caps">TIME</span> OBSERVATIONS STARTED</th><th><span class="caps">TRIP</span> COMMENTS</th><th><span class="caps">SPECIES</span> COMMENTS</th><th><span class="caps">OBSERVER</span> ID</th><th><span class="caps">FIRST</span> NAME</th><th><span class="caps">LAST</span> NAME</th><th><span class="caps">SAMPLING</span> EVENT IDENTIFIER</th><th><span class="caps">PROTOCOL</span> TYPE</th><th><span class="caps">PROJECT</span> CODE</th><th><span class="caps">DURATION</span> MINUTES</th><th><span class="caps">EFFORT</span> DISTANCE KM</th><th><span class="caps">EFFORT</span> AREA HA</th><th><span class="caps">NUMBER</span> OBSERVERS</th><th><span class="caps">ALL</span> SPECIES REPORTED</th><th><span class="caps">GROUP</span> IDENTIFIER</th><th><span class="caps">APPROVED</span></th><th><span class="caps">REVIEWED</span></th><th><span class="caps">REASON</span></th></tr><tr><td></td><td><span class="caps">URN</span>:CornellLabOfOrnithology:EBIRD:OBS100011559</td><td>9523</td><td>species</td><td>Amazonian Motmot</td><td>Momotus momota</td><td></td><td></td><td>1</td><td></td><td></td><td>Brazil</td><td><span class="caps">BR</span></td><td>Rondônia</td><td><span class="caps">BR</span>-RO</td><td></td><td></td><td></td><td></td><td>Pousada Ecolôgica Rancho Grande</td><td>L1009712</td><td>H</td><td>-10.297933</td><td>-62.866667</td><td>2004-10-21</td><td></td><td><span class="caps">WINGS</span> tour</td><td></td><td>obsr37316</td><td>Rich</td><td>Hoyer</td><td>S7003400</td><td>eBird - Casual Observation</td><td><span class="caps">EBIRD</span></td><td></td><td></td><td></td><td></td><td>1</td><td></td><td>1</td><td>0</td><td></td></tr><tr><td></td><td><span class="caps">URN</span>:CornellLabOfOrnithology:EBIRD:OBS100011865</td><td>9523</td><td>species</td><td>Amazonian Motmot</td><td>Momotus momota</td><td></td><td></td><td>4</td><td></td><td></td><td>Brazil</td><td><span class="caps">BR</span></td><td>Rondônia</td><td><span class="caps">BR</span>-RO</td><td></td><td></td><td></td><td></td><td>Pousada Ecolôgica Rancho Grande</td><td>L1009712</td><td>H</td><td>-10.297933</td><td>-62.866667</td><td>2004-10-25</td><td></td><td><span class="caps">WINGS</span> tour</td><td></td><td>obsr37316</td><td>Rich</td><td>Hoyer</td><td>S7003404</td><td>eBird - Casual Observation</td><td><span class="caps">EBIRD</span></td><td></td><td></td><td></td><td></td><td>1</td><td></td><td>1</td><td>0</td><td></td></tr><tr><td></td><td><span class="caps">URN</span>:CornellLabOfOrnithology:EBIRD:OBS100005211</td><td>9523</td><td>species</td><td>Amazonian Motmot</td><td>Momotus momota</td><td></td><td></td><td>1</td><td></td><td></td><td>Brazil</td><td><span class="caps">BR</span></td><td>Rondônia</td><td><span class="caps">BR</span>-RO</td><td></td><td></td><td></td><td></td><td>Pousada Ecolôgica Rancho Grande</td><td>L1009712</td><td>H</td><td>-10.297933</td><td>-62.866667</td><td>2002-10-29</td><td></td><td></td><td></td><td>obsr37316</td><td>Rich</td><td>Hoyer</td><td>S7003059</td><td>eBird - Casual Observation</td><td><span class="caps">EBIRD</span></td><td></td><td></td><td></td><td></td><td>1</td><td></td><td>1</td><td>0</td><td></td></tr><tr><td></td><td><span class="caps">URN</span>:CornellLabOfOrnithology:EBIRD:OBS100005902</td><td>9523</td><td>species</td><td>Amazonian Motmot</td><td>Momotus momota</td><td></td><td></td><td>1</td><td></td><td></td><td>Brazil</td><td><span class="caps">BR</span></td><td>Rondônia</td><td><span class="caps">BR</span>-RO</td><td></td><td></td><td></td><td></td><td>Pousada Ecolôgica Rancho Grande</td><td>L1009712</td><td>H</td><td>-10.297933</td><td>-62.866667</td><td>2002-11-01</td><td></td><td></td><td></td><td>obsr37316</td><td>Rich</td><td>Hoyer</td><td>S7003070</td><td>eBird - Casual Observation</td><td><span class="caps">EBIRD</span></td><td></td><td></td><td></td><td></td><td>1</td><td></td><td>1</td><td>0</td><td></td></tr><tr><td></td><td><span class="caps">URN</span>:CornellLabOfOrnithology:EBIRD:OBS100007175</td><td>9523</td><td>species</td><td>Amazonian Motmot</td><td>Momotus momota</td><td></td><td></td><td>2</td><td></td><td></td><td>Brazil</td><td><span class="caps">BR</span></td><td>Rondônia</td><td><span class="caps">BR</span>-RO</td><td></td><td></td><td></td><td></td><td>Rio Verde to Porto Velho</td><td>L1009715</td><td>H</td><td>-8.5236</td><td>-63.452117</td><td>2002-11-20</td><td></td><td></td><td></td><td>obsr37316</td><td>Rich</td><td>Hoyer</td><td>S7003084</td><td>eBird - Casual Observation</td><td><span class="caps">EBIRD</span></td><td></td><td></td><td></td><td></td><td>1</td><td></td><td>1</td><td>0</td><td></td></tr></table><table><tr><td style="color:#999">7 rows in total</td></tr></table></div>
+<p>There are tons of fields. We are only interested in the locations in which these birds are observed and how many were counted during each&nbsp;observation.</p>
+
+<pre>
+select(['COMMON NAME','LOCALITY','OBSERVATION COUNT'])
+show()
+</pre><div style="overflow:scroll"><table><tr><th><span class="caps">COMMON</span> NAME</th><th><span class="caps">LOCALITY</span></th><th><span class="caps">OBSERVATION</span> COUNT</th></tr><tr><td>Amazonian Motmot</td><td>Pousada Ecolôgica Rancho Grande</td><td>1</td></tr><tr><td>Amazonian Motmot</td><td>Pousada Ecolôgica Rancho Grande</td><td>4</td></tr><tr><td>Amazonian Motmot</td><td>Pousada Ecolôgica Rancho Grande</td><td>1</td></tr><tr><td>Amazonian Motmot</td><td>Pousada Ecolôgica Rancho Grande</td><td>1</td></tr><tr><td>Amazonian Motmot</td><td>Rio Verde to Porto Velho</td><td>2</td></tr></table><table><tr><td style="color:#999">7 rows in total</td></tr></table></div>
+<p>Let&#39;s group these observations by localtions. The relevant field is <em><span class="caps">LOCALITY</span></em>.</p>
+
+<pre>
+groupBy('LOCALITY')
+show()
+</pre><div style="overflow:scroll"><table><tr><th><span class="caps">LOCALITY</span></th><th>count</th><th></th></tr><tr><td>Pousada Ecolôgica Rancho Grande</td><td>6</td><td><table><tr><th><span class="caps">COMMON</span> NAME</th><th><span class="caps">OBSERVATION</span> COUNT</th></tr><tr><td>Amazonian Motmot</td><td>1</td></tr><tr><td>Amazonian Motmot</td><td>4</td></tr><tr><td>Amazonian Motmot</td><td>1</td></tr><tr><td>Amazonian Motmot</td><td>1</td></tr><tr><td>Amazonian Motmot</td><td>2</td></tr><tr><td>Amazonian Motmot</td><td>4</td></tr></table></td></tr><tr><td>Rio Verde to Porto Velho</td><td>1</td><td><table><tr><th><span class="caps">COMMON</span> NAME</th><th><span class="caps">OBSERVATION</span> COUNT</th></tr><tr><td>Amazonian Motmot</td><td>2</td></tr></table></td></tr></table><table><tr><td style="color:#999">2 rows in total</td></tr></table></div>
+<p>We found six observations were made in Pousada EcolÃ´gica Rancho Grande and only one was made in Rio Verde to Porto&nbsp;Velho. </p>
+<p>In each observation, there may be anywhere from one bird or thousands of birds in a flock seen by an observation. Such information is stored in <em>OBSERVATION_COUNT</em>. Let&#39;s sum up the numbers under the <em>OBSERVATION_COUNT</em> column to find out how many birds in total observed in each&nbsp;location.</p>
+
+<pre>
+sum('OBSERVATION COUNT')
+show()
+</pre><div style="overflow:scroll"><table><tr><th><span class="caps">LOCALITY</span></th><th>count</th><th></th><th>sum-observation-count</th></tr><tr><td>Pousada Ecolôgica Rancho Grande</td><td>6</td><td><table><tr><th><span class="caps">COMMON</span> NAME</th><th><span class="caps">OBSERVATION</span> COUNT</th></tr><tr><td>Amazonian Motmot</td><td>1</td></tr><tr><td>Amazonian Motmot</td><td>4</td></tr><tr><td>Amazonian Motmot</td><td>1</td></tr><tr><td>Amazonian Motmot</td><td>1</td></tr><tr><td>Amazonian Motmot</td><td>2</td></tr><tr><td>Amazonian Motmot</td><td>4</td></tr></table></td><td>13</td></tr><tr><td>Rio Verde to Porto Velho</td><td>1</td><td><table><tr><th><span class="caps">COMMON</span> NAME</th><th><span class="caps">OBSERVATION</span> COUNT</th></tr><tr><td>Amazonian Motmot</td><td>2</td></tr></table></td><td>2</td></tr></table><table><tr><td style="color:#999">2 rows in total</td></tr></table></div>
+<p>Finally, we take a total sum to find out in total how many birds were counted across all&nbsp;locations.</p>
+
+<pre>
+sum('sum-observation-count')
+show()
+</pre><table><tr><td>15</tr></td></table>
+<p>The answer is&nbsp;15.</p>
+</article></body></html></section>
+            </article>
+            <div class="clear"></div>
+            <div class="big"></div>
+            <hr>
+            <!-- Start of navigation-->
+            <div class="navigation">
+              <!-- Start of alignleft-->
+              <div class="alignleft"><a href="#">Previous Blog Title</a></div>
+              <!-- End of alignleft-->
+              <!-- Start of alignright-->
+              <div class="alignright"><a href="#">Next Blog Title</a></div>
+              <!-- End of alignright-->
+            </div>
+            <!-- End of navigation-->
+            <!-- Start of clear fix-->
+            <div class="clear"></div>
+          </article>
+          <!-- End of featured text blog
+          // Start of clear fix
+          .clear
+          -->
+          <!-- End of blog wrapper-->
+        </div>
+        <!-- End of main fullwidth wrapper-->
+        <!-- Start of clear fix-->
+        <div class="clear"></div>
+      </section>
+      <!-- End of main-->
+      <!-- ******************************************************************** This is homepage newsletter signup ********************************************************************-->
+    </div>
+    <!-- End of bdywrapper-->
+    <!-- ******************************************************************** This is start of the footer ********************************************************************-->
+    <!-- Start of top-->
+    <div id="top">
+      <!-- Start of main section bg-->
+      <div id="main_section_bg"></div>
+      <!-- End of main section bg-->
+      <!-- Start of clear fix-->
+      <div class="clear"></div>
+    </div>
+    <!-- End of top-->
+  </body>
+</html>
